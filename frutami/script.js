@@ -24,16 +24,16 @@ document.addEventListener('DOMContentLoaded', function () {
   function loadEpisode(episodeNumber) {
       switch (episodeNumber) {
           case 1:
-              video.src = "C:\Downloaded Web Sites\jut.su\kimetsu-no-yaiba\1.1080.d2abb5726c3f2e44.mp4"; // Змініть на реальний шлях до 1 епізоду
+              video.src = 'videos/episode-1.mp4'; // Змініть на реальний шлях до 1 епізоду
               break;
           case 2:
-              video.src = "C:\Downloaded Web Sites\jut.su\kimetsu-no-yaiba\2.1080.b973d09a1da1afb9.mp4"; // Змініть на реальний шлях до 2 епізоду
+              video.src = 'videos/episode-2.mp4'; // Змініть на реальний шлях до 2 епізоду
               break;
           case 3:
-              video.src = "C:\Downloaded Web Sites\jut.su\kimetsu-no-yaiba\3.1080.03f6d22449a6f510.mp4"; // Змініть на реальний шлях до 3 епізоду
+              video.src = 'videos/episode-3.mp4'; // Змініть на реальний шлях до 3 епізоду
               break;
           default:
-              video.src = "C:\Downloaded Web Sites\jut.su\kimetsu-no-yaiba\1.1080.d2abb5726c3f2e44.mp4";
+              video.src = 'videos/episode-1.mp4';
       }
       video.load(); // Перезавантаження відео
   }
@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
       const quality = qualitySelect.value;
       // Визначте шлях до відео на основі якості
       if (quality === "480p") {
-          video.src = "C:\Downloaded Web Sites\jut.su\kimetsu-no-yaiba\1.480.c81ba9cc95926096.mp4"; // Змініть на реальний шлях до 480p
+          video.src = 'videos/episode-1_480p.mp4'; // Змініть на реальний шлях до 480p
       } else if (quality === "720p") {
           video.src = 'videos/episode-1_720p.mp4'; // Змініть на реальний шлях до 720p
       } else if (quality === "1080p") {
-          video.src = "C:\Downloaded Web Sites\jut.su\kimetsu-no-yaiba\1.1080.d2abb5726c3f2e44.mp4"; // Змініть на реальний шлях до 1080p
+          video.src = 'videos/episode-1_1080p.mp4'; // Змініть на реальний шлях до 1080p
       }
       video.load(); // Перезавантаження відео
   });
