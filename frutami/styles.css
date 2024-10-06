@@ -27,7 +27,7 @@ body::before {
 /* Стилі для хедера */
 header {
   background-color: #444; /* Сірий фон для заголовка */
-  padding: 20px;
+  padding: 10px;
 }
 
 h1 {
@@ -92,10 +92,10 @@ nav ul li a {
 
 #animeVideo {
   position: absolute;
-  left: 600px;;
+  left: 540px;;
   top: 400px;
-  width: 700px;
-  height: 500px;
+  width: 840px;
+  height: 470px;
   object-fit: cover; /* Відео підлаштовується під контейнер */
   border-radius: 5px;
   margin: 0 auto;
