@@ -60,27 +60,24 @@ nav ul li a {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.7); /* Прозорий чорний фон */
+  background-color: #111111; /* Дуже темно-сірий фон, майже чорний */
   color: #e0e0e0;
   padding: 20px;
   position: absolute;
   top: 20px;
-  left: 160px;
+  left: 115px;
   border-radius: 15px;
-  width: 900px;
+  width: 930px;
   height: 1100px;
+  border: 3px solid #333; /* Рамка навколо .overlay */
 }
 
-/* Загальний блок з рамкою для відео */
-.video-wrapper {
-  background-color: #333; /* Темно-сірий фон для відео */
-  border: 3px solid #e0e0e0; /* Світло-сіра рамка */
-  border-radius: 10px;
-  padding: 15px;
-  margin: 20px auto;
-  width: 840px; /* Ширина контейнера */
-  max-width: 100%; /* Адаптивна ширина */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тінь для ефекту піднесення */
+/* Рамка для відео */
+.frame-container {
+  border: 3px solid #333; /* Контур рамки для контейнера */
+  border-radius: 10px; /* Закруглення кутів */
+  margin: 20px auto; /* Центрування */
+  max-width: 900px; /* Максимальна ширина контейнера */
 }
 
 /* Стилі для відеоплеєра */
@@ -92,14 +89,13 @@ nav ul li a {
 
 #animeVideo {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 140px;
+  left: 30px;
   width: 840px;
-  height: 427px;
-  top: 340px;
-  left: 560px;
+  height: 470;
   object-fit: cover; /* Відео підлаштовується під контейнер */
-  border-radius: 5px;
+  border: 3px solid #333; /* Контур рамки для відеоплеєра */
+  border-radius: 5px; /* Закруглення кутів для відео */
 }
 
 /* Стилі для елементів керування відео */
